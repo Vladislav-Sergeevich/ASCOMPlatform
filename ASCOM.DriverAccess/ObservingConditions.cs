@@ -180,6 +180,18 @@ namespace ASCOM.DriverAccess
             get { return (double)_memberFactory.CallMember(1, "WindSpeed", new Type[] { }, new object[] { }); }
         }
 
+        /// <inheritdoc/>
+        public double RelativeSkyTemp
+        {
+            get { return (double)_memberFactory.CallMember(1, "RelativeSkyTemp", new Type[] { }, new object[] { }); }
+        }
+
+        /// <inheritdoc/>
+        public double PWV
+        {
+            get { return (double)_memberFactory.CallMember(1, "PWV", new Type[] { }, new object[] { }); }
+        }
+
         #endregion
 
         #region ObservingConditions methods
